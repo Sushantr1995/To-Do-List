@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E3E9FF;
+    margin-top: 2rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.listName {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #AF7EEB;
+    padding: 20px 0px;
+    letter-spacing: 2px;
+    margin: auto;
+    color: white;
+    font-weight: 700;
+}
+
+#tasks {
+    display: inline-block;
+    width: 100%;
+    padding-top: 15px;
+}
+
+#tasks ul li {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 50px;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+#btn {
+    background-color: #AF7EEB;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 17px 60px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #791ee8;
+}
+
+#btn:focus-visible, #btn:focus {
+    border: none;
+}
+
+.icons {
+    position: absolute;
+    left: 38rem;
+}
+
+.del {
+    padding-right: 10px;
+    width: 18px;
+    cursor: pointer;
+}
+
+#tasks ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li.checked {
+    background: rgb(139, 139, 139) !important;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#tasks ul li:hover {
+    background-color: rgb(212, 211, 211);
+}
+
+ul li.checked::before {
+    content: '✓ ';
+    position: relative;
+}
+
+@media screen and (min-width: 300px) and (max-width: 425px) {
+    .icons {
+        position: absolute;
+        left: 35rem;
+    }
+}
